@@ -9,7 +9,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo ""
 echo "Retrieving required repositories into ../repos/"
 
-# Example: $SCRIPT_DIR/.devcontainer/get_git_repo.sh REPO-NAME
+$SCRIPT_DIR/.devcontainer/get_git_repo.sh bacchanal
 
 echo ""
 echo "✅ Running of User-level startup scripts complete."
