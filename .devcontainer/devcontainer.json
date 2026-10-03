@@ -1,17 +1,14 @@
 {
   "name": "Bacchanal",
-  "image": "mcr.microsoft.com/devcontainers/base:debian", // Uncomment this line to use Debain Linux as the base image for the dev container.
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "initializeCommand": "sh .devcontainer/initialize.sh",
   "postCreateCommand": "sh .devcontainer/post-create.sh",
-  "postStartCommand": "sh .devcontainer/post-start.sh",
+  "postStartCommand": "sh .devcontainer/post_start.sh",
   "runArgs": [
     "--network=host",
     "--env-file",
     ".devcontainer/devcontainer.env"
   ],
-  "features": {
-    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
-  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -23,5 +20,13 @@
   },
   "mounts": [],
   "remoteUser": "vscode",
-  "remoteEnv": {}
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin",
+    "ANTHROPIC_BASE_URL": "http://host.docker.internal:6655/anthropic/",
+		"ANTHROPIC_AUTH_TOKEN": "111ed8da-39c1-4f1f-9bc0-69a00ec20c9d",
+    "ANTHROPIC_MODEL": "anthropic--claude-sonnet-latest",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "anthropic--claude-sonnet-latest",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "anthropic--claude-haiku-latest",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "anthropic--claude-opus-latest"
+  }
 }
