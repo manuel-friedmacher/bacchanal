@@ -1,6 +1,6 @@
 # 🍷 Bacchanal
 
-**Bacchanal** is a self-hosted, personal hospitality and location manager designed for modern epicureans. Named after the ancient Roman festivals of Bacchus—the god of wine, revelry, and fine hosting—this application serves as your private digital ledger to curate, map, and share the extraordinary places you have experienced or dream of discovering. 
+**Bacchanal** is a personal hospitality and location manager designed for modern epicureans. Named after the ancient Roman festivals of Bacchus—the god of wine, revelry, and fine hosting—this application serves as your private digital ledger to curate, map, and share the extraordinary places you have experienced or dream of discovering. 
 
 Whether tracking high-end restaurants, boutique hotels, hidden cocktail dens, or world-class wineries, Bacchanal organizes your hospitality journey into a beautiful, seamless interface.
 
